@@ -206,13 +206,11 @@
 }
 ```
 
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `long` ou `UUID` | **Retorna o cadastro do ID que foi passado**. |
+
 ##
-
-<h3>Extras :</h3>
-
-• Cadastro e gerenciamento de veículos para cada cliente:
-
-• Dados do veículo: Marca, Modelo e Placa.
 
 • Validação de CPF e CNPJ no momento do cadastro.
 
