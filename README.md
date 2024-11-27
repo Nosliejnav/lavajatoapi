@@ -119,7 +119,7 @@
     "marca": "CHEVROLET",
     "modelo": "Celta Lt 1.O Flex",
     "placa": "B0900",
-    "preco": 700.00
+    "preco": 700
 
 }
 ```
@@ -163,10 +163,10 @@
 ##
 
   <div align="justify">
-  <h3>1. Cadastrar um cliente</h3>
+  <h3>1. Cadastrar cliente para cada veiculo</h3>
 
   ```http
-  POST /clientes
+  POST /cadastros
 ```
 
   ```json
