@@ -88,68 +88,68 @@
 ##
 
   <div align="justify">
-  <h3>1. Cadastrar um cliente</h3>
+  <h3>1. Cadastrar um veiculo</h3>
 
   ```http
-  POST /clientes
+  POST /veiculos
 ```
 
   ```json
 {
-    "nome": "Fulano",
-    "cpf": "987.654.321-00",
-    "telefon": "(61) 9 9876-5432",
-    "endereco": "Quadra 01 Casa 01",
+    "marca": "FIAT",
+    "modelo": "Uno Way 1.4 Flex",
+    "placa": "A0800",
+    "preco": 700
+
 }
 ```
 
 | Descrição                           |
 | :---------------------------------- |
- **Dados do Cliente feitos em JSON** |
+ **Dados do veiculo feitos em JSON** |
 
-<h3>2. Atualizar os dados de um cliente</h3>
+<h3>2. Atualizar os dados de um veiculo</h3>
 
   ```http
-  PUT /clientes/:id
+  PUT /veiculos/:id
 ```
 
   ```json
 {
-    "nome": "Cliclano",
-    "cpf": "789.654.321-00",
-    "telefon": "(61) 9 8765-5432",
-    "endereco": "Quadra 02 Casa 02",
+    "marca": "CHEVROLET",
+    "modelo": "Celta Lt 1.O Flex",
+    "placa": "B0900",
+    "preco": 700.00
+
 }
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `long` ou `UUID` | **Atualiza o nome ou qualquer outro dado do Cliente cujo ID foi passado**. |
+| `id`      | `long` ou `UUID` | **Atualiza o nome ou qualquer outro dado do veiculo cujo ID foi passado**. |
 
-<!-- • Permitir editar qualquer dado de um cliente já cadastrado. -->
 
-<h3>3. Deletar um cliente</h3>
+<h3>3. Deletar um veiculo</h3>
 
 
   ```http
-  DELETE /clientes/:id
+  DELETE /veiculos/:id
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `long` ou `UUID` | **Deleta o Cliente do ID que foi passado**. |
+| `id`      | `long` ou `UUID` | **Deleta o veiculo do ID que foi passado**. |
 
-<!-- • Remover o cliente e seus veículos associados. -->
 
-<h3>4. Buscar um cliente</h3>
+<h3>4. Buscar um veiculo</h3>
 
   ```http
-  GET /clientes/:id
+  GET /veiculos/:id
 ```
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `long` ou `UUID` | **Retorna o cliente do ID que foi passado**. |
+| `id`      | `long` ou `UUID` | **Retorna o veiculo do ID que foi passado**. |
 
 
 ##
@@ -171,10 +171,14 @@
 
   ```json
 {
-    "nome": "Fulano",
-    "cpf": "987.654.321-00",
-    "telefon": "(61) 9 9876-5432",
-    "endereco": "Quadra 01 Casa 01",
+    "cliente" : 1,
+    "total" : 1400,
+    "items" : [
+        {
+            "veiculo": 1,
+            "quantidade" : 2
+        }
+    ]
 }
 ```
 
