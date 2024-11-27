@@ -182,6 +182,31 @@
 }
 ```
 
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| `id`      | `long` ou `UUID` | **Cadastra o cliente e veiculo cujo ID foi passado, no qual e o mesmo gerado dos seus respectivos cadastros anteriores**. |
+
+  <div align="justify">
+  <h3>2. Obter Detalhes</h3>
+
+  ```http
+  GET /cadastros
+```
+
+  ```json
+{
+    "cliente" : 1,
+    "total" : 1400,
+    "items" : [
+        {
+            "veiculo": 1,
+            "quantidade" : 2
+        }
+    ]
+}
+```
+
+##
 
 <h3>Extras :</h3>
 
