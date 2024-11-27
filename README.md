@@ -79,13 +79,7 @@
 
 ##
 
-<h3>Extras :</h3>
-
-• Cadastro e gerenciamento de veículos para cada cliente:
-
-• Dados do veículo: Marca, Modelo e Placa.
-
-• Validação de CPF e CNPJ no momento do cadastro.
+##
 
 ##
 
@@ -158,7 +152,7 @@
 | `id`      | `long` ou `UUID` | **Retorna o cliente do ID que foi passado**. |
 
 
-<!--• • A busca deve ser feita usando CPF (para pessoa física) ou CNPJ (para pessoa jurídica). -->
+##
 
 ##
 
@@ -183,6 +177,16 @@
     "endereco": "Quadra 01 Casa 01",
 }
 ```
+
+
+<h3>Extras :</h3>
+
+• Cadastro e gerenciamento de veículos para cada cliente:
+
+• Dados do veículo: Marca, Modelo e Placa.
+
+• Validação de CPF e CNPJ no momento do cadastro.
+
 
   </div>
 </div>
