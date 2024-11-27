@@ -28,7 +28,7 @@
 
 | Descrição                           |
 | :---------------------------------- |
- **Dados do Cliente feitos em JSON** |
+ **Dados do cliente feitos em JSON** |
 
 <h3>2. Atualizar os dados de um cliente</h3>
 
@@ -47,7 +47,7 @@
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `long` ou `UUID` | **Atualiza o nome ou qualquer outro dado do Cliente cujo ID foi passado**. |
+| `id`      | `long` ou `UUID` | **Atualiza o nome ou qualquer outro dado do cliente cujo ID foi passado**. |
 
 <!-- • Permitir editar qualquer dado de um cliente já cadastrado. -->
 
@@ -60,7 +60,7 @@
 
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
-| `id`      | `long` ou `UUID` | **Deleta o Cliente do ID que foi passado**. |
+| `id`      | `long` ou `UUID` | **Deleta o cliente do ID que foi passado**. |
 
 <!-- • Remover o cliente e seus veículos associados. -->
 
@@ -74,6 +74,16 @@
 | :---------- | :--------- | :------------------------------------------ |
 | `id`      | `long` ou `UUID` | **Retorna o cliente do ID que foi passado**. |
 
+
+<h3>5. Obter detalhes de um ou varios clientes</h3>
+
+  ```http
+  GET /clientes?cpf=123.456.789-75
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| Todos      | Todos | **Retorna o cliente respectivo do parametro que foi passado**. |
 
 <!--• • A busca deve ser feita usando CPF (para pessoa física) ou CNPJ (para pessoa jurídica). -->
 
@@ -150,6 +160,17 @@
 | Parâmetro   | Tipo       | Descrição                                   |
 | :---------- | :--------- | :------------------------------------------ |
 | `id`      | `long` ou `UUID` | **Retorna o veiculo do ID que foi passado**. |
+
+
+<h3>5. Obter detalhes de um ou varios veiculos</h3>
+
+  ```http
+  GET /veiculos?modelo=Celta
+```
+
+| Parâmetro   | Tipo       | Descrição                                   |
+| :---------- | :--------- | :------------------------------------------ |
+| Todos      | Todos | **Retorna o veiculo respectivo do parametro que foi passado**. |
 
 
 ##
