@@ -20,9 +20,9 @@
   ```json
 {
     "nome": "Fulano",
-    "cpf": "987.654.321-00",
-    "telefon": "(61) 9 9876-5432",
-    "endereco": "Quadra 01 Casa 01",
+    "cpf": "123.456.789-75",
+    "telefone": "9 9516-7453",
+    "endereco": "Casa 01 quadra 01"
 }
 ```
 
@@ -39,9 +39,9 @@
   ```json
 {
     "nome": "Cliclano",
-    "cpf": "789.654.321-00",
-    "telefon": "(61) 9 8765-5432",
-    "endereco": "Quadra 02 Casa 02",
+    "cpf": "234.456.789-71",
+    "telefone": "8 8516-7453",
+    "endereco": "Casa 02 quadra 02"
 }
 ```
 
@@ -108,8 +108,7 @@
 {
     "marca": "FIAT",
     "modelo": "Uno Way 1.4 Flex",
-    "placa": "A0800",
-    "preco": 700
+    "placa": "A0800"
 
 }
 ```
@@ -128,8 +127,7 @@
 {
     "marca": "CHEVROLET",
     "modelo": "Celta Lt 1.O Flex",
-    "placa": "B0900",
-    "preco": 700
+    "placa": "B0900"
 
 }
 ```
@@ -193,11 +191,9 @@
   ```json
 {
     "cliente" : 1,
-    "total" : 1400,
     "items" : [
         {
-            "veiculo": 1,
-            "quantidade" : 2
+            "veiculo": 1
         }
     ]
 }
@@ -211,17 +207,18 @@
   <h3>2. Obter Detalhes</h3>
 
   ```http
-  GET /cadastros
+  GET /cadastros/1
 ```
 
   ```json
 {
-    "cliente" : 1,
-    "total" : 1400,
-    "items" : [
+    "codigo": 1,
+    "cpf": "234.456.789-71",
+    "nomeCliente": "Cliclano",
+    "dataCadastro": "28/11/2024",
+    "items": [
         {
-            "veiculo": 1,
-            "quantidade" : 2
+            "marcaVeiculo": "CHEVROLET"
         }
     ]
 }
